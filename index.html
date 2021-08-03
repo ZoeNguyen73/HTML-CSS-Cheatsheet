@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML CSS Cheatsheet</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>Zoe's HTML CSS Cheatsheet</header>
+        <aside>
+            <nav>
+                <h1>Shortcuts</h1>
+                <ol>
+                    <li><a href="#part-1">Basic HTML document</a></li>
+                    <li><a href="#part-2">Common HTML tags</a></li>
+                    <li><a href="#part-3">Table HTML</a></li>
+                    <li><a href="#part-4">Basic & Common CSS</a></li>
+                    <li><a href="#part-5">Useful Links</a></li>
+                </ol>
+            </nav>
+        </aside>
+        <article id="part-1">
+            <h1>1. Basic HTML document</h1>
+            <table>
+                <tr>
+                    <th>Page section</th>
+                    <th>Semantics</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>N/A</td>
+                    <td>
+                        &lt;!DOCTYPE html&gt;
+                    </td>
+                    <td>
+                        To declare the doc type at the start of the file
+                    </td>
+                </tr>
+                <tr>
+                    <td>N/A</td>
+                    <td>
+                        &lt;html&gt;All html content&lt;/html&gt;
+                    </td>
+                    <td>
+                        All HTML content to be placed within this tag
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Head</td>
+                    <td>
+                        &lt;title&gt;Page Title Here&lt;/title&gt;
+                    </td>
+                    <td>
+                        Show Page Title in browser window (not shown on page)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;link href="style.css" type="text/css" rel="stylesheet"&gt;
+                    </td>
+                    <td>
+                        To link CSS file to HTML file
+                    </td>
+                </tr>
+                <tr>
+                    <td>Body</td>
+                    <td>
+                        &lt;main&gt;Content here&lt;/main&gt;
+                    </td>
+                    <td>
+                        Page content to be input here
+                    </td>
+                </tr>
+                <tr>
+                    <td>Footer</td>
+                    <td>
+                        &lt;footer&gt;Footer here&lt;/footer&gt;
+                    </td>
+                    <td>
+                        Footer content (eg. contact info, copyright info...) to be input here
+                    </td>
+                </tr>
+            </table>
+        </article>
+        <article id="part-2">
+            <h1>2. Common HTML Tags</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Semantics</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td>&lt;img src="url.jpg" alt="text describing image"&gt;</td>
+                    <td>Self-closing tag. Alt attribute is important for accessibility & SEO</td>
+                </tr>
+                <tr>
+                    <td>Video</td>
+                    <td>&lt;video src="video.mp4" controls&gt;Video not supported&lt;/video&gt;</td>
+                    <td>
+                        <ul>
+                            <li>Controls attribute will display video controls in the media player</li>
+                            <li>The content inside the opening & closing tags is shown as a fallback in browsers that don't support the element</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Audio</td>
+                    <td>&lt;audio src="video.mp4" controls&gt;Video not supported&lt;/audio&gt;</td>
+                    <td>
+                        <ul>
+                            <li>Controls attribute will display video controls in the media player</li>
+                            <li>The content inside the opening & closing tags is shown as a fallback in browsers that don't support the element</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Anchor</td>
+                    <td>&lt;a href="random-url.com" target="_blank"&gt;</td>
+                    <td>
+                        <ul>
+                            <li>Create hyperlinks</li>
+                            <li>Target="_blank" attribute will make the hyperlink opened in a separate browser tab</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Figure & Caption</td>
+                    <td>&lt;figure&gt;<br/>
+                        &lt;img src="image.jpg"&gt;<br/>
+                        &lt;figcaption&gt;Description of the media&lt;/figcaption&gt;<br/>
+                        &lt;/figure&gt;</td>
+                    <td>
+                        <ul>
+                            <li>Used to encapsulate media (image, diagram or code snippet)</li>
+                            <li>Figcaption element is used to describe the media</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </article>
+        <article id="part-3">
+            <h1>3. Table</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Semantics</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>&lt;table&gt;&lt;/table&gt;</td>
+                    <td>The wrapper element for all HTML tables</td>
+                </tr>
+                <tr>
+                    <td>Table Head</td>
+                    <td>&lt;thead&gt;&lt;/thead&gt;</td>
+                    <td>The set of rows defining the column headers in a table</td>
+                </tr>
+                <tr>
+                    <td>Table Body</td>
+                    <td>&lt;tbody&gt;&lt;/tbody&gt;</td>
+                    <td>The set of rows containing actual table data</td>
+                </tr>
+                <tr>
+                    <td>Table Row</td>
+                    <td>&lt;tr&gt;&lt;/tr&gt;</td>
+                    <td>The table row container</td>
+                </tr>
+                <tr>
+                    <td>Table Data</td>
+                    <td>&lt;td&gt;&lt;/td&gt;</td>
+                    <td>The table data container,making up individual cell</td>
+                </tr>
+                <tr>
+                    <td>Table Foot</td>
+                    <td>&lt;tfoot&gt;&lt;/tfoot&gt;</td>
+                    <td>The set of rows defining the footer in a table</td>
+                </tr>
+                <tr>
+                    <td>Colspan</td>
+                    <td>&lt;td colspan="2"&gt;&lt;/td&gt;</td>
+                    <td>Defines how many columns a td element should span</td>
+                </tr>
+                <tr>
+                    <td>Colspan</td>
+                    <td>&lt;td rowspan="2"&gt;&lt;/td&gt;</td>
+                    <td>Defines how many rows a td element should span</td>
+                </tr>
+            </table>
+        </article>
+        <article id="part-4">
+            <h1>4. Basic & Common CSS</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Semantics</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Style by element</td>
+                    <td><span class="blue">p</span> { font-weight = 12; }</td>
+                    <td>Element tag followed by curly brackets</td>
+                </tr>
+                <tr>
+                    <td>Style by class</td>
+                    <td><span class="blue">.class-name</span> { font-weight = 12; }</td>
+                    <td>Dot, followed by class name, followed by curly brackets</td>
+                </tr>
+                <tr>
+                    <td>Style by id</td>
+                    <td><span class="blue">#id-name</span> { font-weight = 12; }</td>
+                    <td>Hash, followed by id (should be unique), followed by curly brackets</td>
+                </tr>
+            </table>
+        </article>
+        <article id="part-5">
+            <h1>5. Useful Links</h1>
+        </article>
+    </body>
+</html>
